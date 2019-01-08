@@ -12,13 +12,13 @@ Or point to the ZIP file of a [specific release](https://github.com/totebo/defol
 
 ## Example
 
-  -- Init
-  states = require "/states/states"
-  states:add( state_id, onStateEnter, onStateRun, onStateExit, self )
-  states:set( state_id )
+      -- Init
+      states = require "/states/states"
+      states:add( state_id, onStateEnter, onStateRun, onStateExit, self )
+      states:set( state_id )
 
-  -- On update
-  states:update()
+      -- On update
+      states:update()
 
 ### stats.update()
 Call this once per frame.
