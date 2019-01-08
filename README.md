@@ -1,13 +1,36 @@
-# Welcome to Defold
+# Defold States
+A minimal state machine, running one state at a time with code of your choice running on enter, run and exit.
 
-This project was created from the "empty" project template.
 
-The settings in ["game.project"](defold://open?path=/game.project) are all the default. A bootstrap empty ["main.collection"](defold://open?path=/main/main.collection) is included.
+# Installation
+You can use Defold Metrics in your own project by adding this project as a [Defold library dependency](http://www.defold.com/manuals/libraries/). Open your game.project file and in the dependencies field under project add:
 
-Check out [the documentation pages](https://defold.com/learn) for examples, tutorials, manuals and API docs.
+  https://github.com/totebo/defold-states/archive/master.zip
 
-If you run into trouble, help is available in [our forum](https://forum.defold.com).
+Or point to the ZIP file of a [specific release](https://github.com/totebo/defold-states/releases).
 
-Happy Defolding!
 
----
+## Example
+
+  -- Init
+  states = require "/states/states"
+  states:add( state_id, onStateEnter, onStateRun, onStateExit, self )
+  states:set( state_id )
+
+  -- On update
+  states:update()
+
+### stats.update()
+Call this once per frame.
+
+
+### states.add( id, callbackEnter, callbackRun, callbackExit, scope )
+Adds a state.
+
+**PARAMETERS**
+
+* `id` Id which is used to activate the state.
+* `callbackEnter` Function triggered when the state is activated.
+* `callbackRun` Function triggered when the state is updated.
+* `callbackExit` Function triggered when the state is deactivated.
+* `scope` Scope of the script that created this States instance.

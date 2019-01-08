@@ -24,7 +24,7 @@ function M:getStateId()
 	end
 
 	return id
-
+	
 end
 
 function M:set( id )
@@ -50,8 +50,6 @@ function M:set( id )
 	callbackEnter( scope, previous_state_id )
 	
 end
-
---function States:update( delta_time )
 
 function M:update()
 
