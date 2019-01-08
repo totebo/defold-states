@@ -12,5 +12,5 @@ height = 640
 title = States
 
 [library]
-include_dirs = /states/
+include_dirs = states
 
