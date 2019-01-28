@@ -15,7 +15,7 @@ function M:add( id, callbackEnter, callbackRun, callbackExit, scope )
 
 end
 
-function M:getStateId()
+function M:get()
 
 	local id
 	local active_state = M.active_state

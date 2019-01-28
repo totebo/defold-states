@@ -1,5 +1,5 @@
 # Defold States
-A minimal state machine, running one state at a time with code of your choice running on enter, run and exit.
+A minimal state machine, running one state at a time with code of your choice triggering on enter, run and exit.
 
 
 # Installation
