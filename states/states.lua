@@ -51,7 +51,7 @@ function M:set( id )
 	
 end
 
-function M:update()
+function M:update( dt )
 
 	local active_state = M.active_state
 	
@@ -59,7 +59,7 @@ function M:update()
 
 		local scope = active_state.scope
 		local callbackRun = active_state.callbackRun
-		callbackRun( scope )
+		callbackRun( scope, dt )
 	
 	end
 
