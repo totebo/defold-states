@@ -13,7 +13,7 @@ Or point to the ZIP file of a [specific release](https://github.com/totebo/defol
 ## Example
 
       -- Init
-      states = require "states/states"
+      states = require "states.states"
       states:add( state_id, onStateEnter, onStateRun, onStateExit, self )
       states:set( state_id )
 
